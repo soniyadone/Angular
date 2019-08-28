@@ -1,0 +1,44 @@
+<form [formGroup]="BasicForm"><br>
+  <div class="container-fluid col-sm-6">
+  <div>
+    <label>Username</label>
+    <input type="text" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"  class="form-control" name="username" formControlName="username">
+    
+    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+      <div *ngIf="f.username.errors.required">Username is required</div>
+      <div *ngIf="f.username.errors.minlength">Username must be at least 6 characters</div>
+  </div>
+  </div>
+
+  <div>
+      <label>Password</label>
+      <input type="password" [class.is-invalid]="BasicForm.get('password').invalid" class="form-control"  formControlName="password">
+      <div *ngIf="f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">password is required</div>
+        <div *ngIf="f.password.errors.pattern">password having only characters</div>
+    </div>
+    </div>
+
+    <div>
+        <label>Confirmpassword</label>
+        <input type="password" [class.is-invalid]="BasicForm.get('confirmpassword').invalid && BasicForm.get('confirmpassword').touched" class="form-control"  formControlName="confirmpassword">
+    </div>
+
+    <div formGroupName="NestedFormId">
+      <div>
+        <label>Batch</label>
+        <input type="text" class="form-control"  formControlName="batchname">
+      </div>
+
+    <div>
+      <label>Fees</label>
+      <input type="text" class="form-control"  formControlName="fees">
+    </div>
+  </div>
+
+  <br>
+  <div>
+    <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  </div>
+    </div>
+</form>
