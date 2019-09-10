@@ -1,0 +1,31 @@
+<div style="text-align: center">
+
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-button routerLink="">App Module</button>
+      <button mat-button routerLink="/admin" (click)="openSnackBar()">Admin Module</button>
+      <button mat-button routerLink="/staff" (click)="openSnackBar1()">Staff Module</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <h1>Lazy Loading in Angular</h1>
+
+  <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+     Angular
+    </mat-panel-title>
+    <mat-panel-description>
+     Angular Logo
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+ 
+  <img src="./assets/A.png"  width="1300px" height="350px" alt="">
+ 
+  <mat-action-row>
+    <button mat-button>Click me</button>
+  </mat-action-row>
+</mat-expansion-panel>
+</div>
+
+<router-outlet></router-outlet>
