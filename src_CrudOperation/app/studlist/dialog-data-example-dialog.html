@@ -1,0 +1,27 @@
+<style>   
+    .dialogbox {
+        background-color: lightsteelblue;
+    }
+</style>
+
+<mat-card class="example-card">
+    <mat-card-header class="dialogbox">
+        <mat-card-title>View Student Details</mat-card-title>
+    </mat-card-header>
+    <div class="example-container">
+        <mat-card-content>
+            <h4 mat-dialog-title>Student Details</h4>
+            <mat-dialog-content>
+                <p>First Name: {{data.kdata.fname}}</p>
+                <p>Lasr Name: {{data.kdata.lname}}</p>
+                <p>Address: {{data.kdata.address}}</p>
+                <p>Mobile Number: {{data.kdata.mobileno}}</p>
+                <p>Gender: {{data.kdata.gender}}</p>
+                <p>Branch: {{data.kdata.branch}}</p>
+            </mat-dialog-content>
+        </mat-card-content>
+    </div>
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+</mat-card>

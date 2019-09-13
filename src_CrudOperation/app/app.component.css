@@ -1,0 +1,74 @@
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 98%;
+  }
+
+  .example-card {
+    max-width: 550px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  ::ng-deep .example-card-title{
+    background-color:rgb(155, 172, 8) !important;
+    padding:5px !important;
+  }
+  
+  ::ng-deep .mat-card{
+    padding:0 !important;
+  }
+  
+  ::ng-deep .mat-card-content{
+    padding:5px !important;
+  }
+
+  ::ng-deep .mat-form-field{
+    padding:1px !important;
+  }
+
+  ::ng-deep .mat-icon{
+    color: purple;
+  }
+
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }
+
+  ::ng-deep .mat-card-title{
+    padding:2px !important;
+    align-content: center;
+  }
+
+  .mat-raised-button{
+    margin-left: 10px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  ::ng-deep .example-card-header{
+    background-color:lightgray !important;
+    padding:5px !important;
+  }
+
+  .icon{
+    padding: 5px;
+    font-size:18px;
+  }
+
+  .card {
+    margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  
+  
+  
